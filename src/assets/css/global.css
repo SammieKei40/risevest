@@ -1,0 +1,34 @@
+* {
+  transition: all 0.5s ease;
+  font-kerning: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: mandatory;
+}
+
+body {
+  font-family: 'Tomato Grotesk', sans-serif;
+}
+
+div.line>div.line {
+  will-change: transform;
+  transform: translateY(100%);
+  @apply md:py-1;
+}
+
+div.line {
+  overflow-y: hidden;
+  vertical-align: top;
+}
+.c-text:first-of-type{
+opacity: 0;
+}
+a.a_link{
+  @apply underline;
+}
+
+

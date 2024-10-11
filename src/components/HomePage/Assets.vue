@@ -1,24 +1,29 @@
 <template>
-    <section class="asset-section">
-        <div class="asset-container w-contain">
-            <h2 class="asset-title">Asset Classes</h2>
-            <p class="asset-subtitle">It’s your money, choose where you invest it</p>
-            <div class="asset-grid">
-                <AssetCard title="Stocks"
-                    description="We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with our equity portfolio of power stocks."
-                    image="/logo.png" backgroundClass="#FFF4F0" linkText="Learn how Stocks work" />
-                <AssetCard title="Real Estate"
-                    description="Our Real Estate plan is the sweet middle. Best for those who want a balance of good returns and medium risk. This plan invests in rented buildings in the US."
-                    image="/logo.png" backgroundClass="bg-purple" linkText="Learn how Real Estate work" />
-                <AssetCard title="Fixed Income"
-                    description="A low-risk asset perfect for anyone who wants to protect their money in a secure, appreciating currency, i.e. the dollar. For people who want to protect their hard-earned money from inflation while earning steady returns."
-                    image="/logo.png" backgroundClass="bg-blue" linkText="Learn how Fixed Income work" />
+    <Animated :delay="0.6">
+
+        <section class="asset-section">
+            <div class="asset-container w-contain">
+                <h2 class="asset-title">Asset Classes</h2>
+                <p class="asset-subtitle">It’s your money, choose where you invest it</p>
+                <div class="asset-grid">
+                    <AssetCard title="Stocks"
+                        description="We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with our equity portfolio of power stocks."
+                        image="/stocks.png" backgroundClass="#FFF4F0" linkText="Learn how Stocks work" />
+                    <AssetCard title="Real Estate"
+                        description="Our Real Estate plan is the sweet middle. Best for those who want a balance of good returns and medium risk. This plan invests in rented buildings in the US."
+                        image="/estate.png" backgroundClass="bg-purple" linkText="Learn how Real Estate work" />
+                    <AssetCard title="Fixed Income"
+                        description="A low-risk asset perfect for anyone who wants to protect their money in a secure, appreciating currency, i.e. the dollar. For people who want to protect their hard-earned money from inflation while earning steady returns."
+                        image="/income.png" backgroundClass="bg-blue" linkText="Learn how Fixed Income work" />
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </Animated>
 </template>
 
 <script setup lang="ts">
+import Animated from '../animated.vue'
 import AssetCard from './../UI/AssetsCard.vue';
 </script>
 
@@ -83,13 +88,20 @@ import AssetCard from './../UI/AssetsCard.vue';
 .asset-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 @media (min-width: 768px) {
     .asset-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .asset-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+
     }
 }
 

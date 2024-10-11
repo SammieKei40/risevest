@@ -1,34 +1,28 @@
 <template>
     <section class="save-section">
         <div class="save-content ">
-            <div class="phone-mockup">
-                <div class="card">
-                    <img src="/phone.png" alt="Coin stack" class="card-image" />
-                    <div class="card-content">
-                        <h4 class="card-title">Build Wealth</h4>
-                        <p class="card-description">
-                            Invest for long-term goals like retirement with this plan. It’s your financial freedom
-                            partner.
-                        </p>
-                        <a href="#" class="card-link">Start investing &rarr;</a>
-                    </div>
+            <Animated :delay="0.6">
+                <img src="/phone.png" alt="Coin stack" class="card-image" />
+            </Animated>
+
+            <Animated :delay="0.8">
+
+                <div class="text-content ">
+                    <p class="sub-title">The Rise App</p>
+                    <h2 class="main-title">Save for your <span class="highlight">future</span></h2>
+                    <p class="description">
+                        With Rise, you achieve your financial goals faster. Save for school, your home, vacations, your
+                        children's future and more.
+                    </p>
+                    <a href="#" class="cta-button">Start Saving</a>
                 </div>
-            </div>
-            <div class="text-content">
-                <p class="sub-title">The Rise App</p>
-                <h2 class="main-title">Save for your <span class="highlight">future</span></h2>
-                <p class="description">
-                    With Rise, you achieve your financial goals faster. Save for school, your home, vacations, your
-                    children's future and more.
-                </p>
-                <a href="#" class="cta-button">Start Saving</a>
-            </div>
+            </Animated>
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
-// No additional logic needed for this template
+import Animated from '../animated.vue'
 </script>
 
 <style scoped>
@@ -43,7 +37,7 @@
 
 .save-content {
     display: flex;
-    gap: 10rem;
+    gap: 2rem;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -57,7 +51,9 @@
         justify-content: space-between;
         align-items: center;
         text-align: left;
+        gap: 10rem;
     }
+    
 }
 
 /* Phone Mockup */
@@ -68,7 +64,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 300px;
-    /* Constrains phone size */
     position: relative;
 }
 
@@ -114,38 +109,66 @@
 /* Text Content */
 .text-content {
     max-width: 500px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
 }
 
 .sub-title {
-    color: #888888;
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
+    color: #2D2D2D;
+    font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+         letter-spacing: -0.9px;
 }
 
 .main-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    color:  #2D2D2D;
+    font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -2px;
 }
 
 .highlight {
     color: #6a5acd;
-    /* Customize this based on your brand */
+    font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -2px;
 }
 
 .description {
-    font-size: 0.875rem;
-    margin-bottom: 1.5rem;
-    color: #555555;
+    font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    color: #2D2D2D
 }
 
 .cta-button {
     background: #07969E;
     color: #ffffff;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
     display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .cta-button {
+        width: 160px;
+            text-align: center;
+    }
+
+        .main-title {
+            font-size: 40px;
+        }
+    
 }
 
 .cta-button:hover {

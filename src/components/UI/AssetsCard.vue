@@ -1,7 +1,7 @@
 <template>
     <div class="asset-card">
-        <div class="icon-background">
-            <div class="icon-container" :class="backgroundClass">
+        <div class="icon-background" :class="backgroundClass">
+            <div class="icon-container">
                 <img :src="image" :alt="title" class="icon-image" />
             </div>
         </div>
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import Arrow from '../icons/arrow.vue'
+import Arrow from '../icons/arrow.vue';
 import { defineProps } from 'vue';
 
 interface Props {
@@ -41,17 +41,18 @@ const props = defineProps<Props>();
 /* Asset Card */
 .asset-card {
     background-color: #ffffff;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    border: 2px solid rgba(145, 159, 181, 0.20);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-    overflow: hidden;
     height: 100%;
     justify-content: space-between;
+    max-width: 25rem;
+    margin: auto;
 }
 
 .asset-card:hover {
@@ -60,14 +61,12 @@ const props = defineProps<Props>();
 
 /* Icon Background */
 .icon-background {
-    background-color: backgroundClass;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
     width: 100%;
+    padding: 3rem 0;
+    border-radius: 1rem 1rem 0 0;
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Icon Container */
@@ -78,64 +77,48 @@ const props = defineProps<Props>();
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
-    .icon-container {
-        width: 6rem;
-        height: 6rem;
-    }
-}
-
 .icon-image {
-    width: 4rem;
-    height: 4rem;
-}
-
-@media (min-width: 768px) {
-    .icon-image {
-        width: 5rem;
-        height: 5rem;
-    }
+    width: 85px;
+    height: 85px;
+    flex-shrink: 0;
 }
 
 /* Text Content */
 .asset-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #2d2d2d;
-    margin-bottom: 0.75rem;
-}
-
-@media (min-width: 768px) {
-    .asset-title {
-        font-size: 1.5rem;
-    }
+    font-size: 24px;
+    color: #4A5050;
+    margin-bottom: 1rem;
+    font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: -1.2px;
 }
 
 .asset-description {
-    font-size: 0.875rem;
     color: #4a4a4a;
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-    .asset-description {
-        font-size: 1rem;
-    }
+    /* margin-bottom: 1.5rem; */
+    text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.8px;
 }
 
 .asset-info {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #6b6b6b;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
 }
 
 /* Highlighted text */
 .highlight {
-    font-weight: 600;
+    font-weight: 400;
+    color: #919FB5;
 }
 
 /* Link Wrapper to keep link aligned at bottom */
@@ -147,18 +130,15 @@ const props = defineProps<Props>();
 /* Call-to-Action Link */
 .asset-link {
     display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-        font-weight: 500;
-        color: #07969E;
-        text-decoration: none;
-}
-
-@media (min-width: 768px) {
-    .asset-link {
-        font-size: 1rem;
-    }
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 90%;
+        letter-spacing: -0.8px;
+        color:#07969E
 }
 
 .asset-link:hover {

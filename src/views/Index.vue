@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import { Hero, Features, Assets, SaveUp, Regulated, Community, FooterSection} from '@/components'
+import { Hero, Features, Assets, SaveUp, Regulated, Community, FooterSection, Download, Testimonial } from '@/components'
 </script>
 
 <template>
   <main>
     <Hero />
-    <Features/>
+    <Features />
     <Assets />
     <SaveUp />
-    <Regulated />
+     <Regulated />
+    <Testimonial/>
     <Community />
+    <Download />
     <FooterSection />
   </main>
 </template>

@@ -190,6 +190,7 @@ import Dot5 from '../icons/dot5.vue';
   .support-text {
     display: none;
   }
+  
 }
 
 .partners {

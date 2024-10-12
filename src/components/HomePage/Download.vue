@@ -8,10 +8,10 @@
             <p class="sub-text">Dollar investments that help you grow.</p>
             <div class="app-buttons">
                 <a href="#" class="app-button">
-                    <img src="/apple.png" alt="Apple" />
+                    <img src="/apple.png" alt="Apple" width="144" height="48" />
                 </a>
                 <a href="#" class="app-button">
-                    <img src="/android.png" alt="Android" />
+                    <img src="/android.png" alt="Android" width="144" height="48" />
                 </a>
             </div>
         </div>

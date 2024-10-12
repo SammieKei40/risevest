@@ -7,9 +7,10 @@
 
       <Dot1 class="dot dot-1" />
       <Dot5 class="dot dot-5" />
+      <Dot5 class="dot dot-6" />
       <Dot2 class="dot dot-2" />
       <Dot3 class="dot dot-3" />
-      <Dot4 class="dot dot-4" />
+      <Dot1 class="dot dot-4" />
 
       <div class="content">
         <div class="text-content c-trigger">
@@ -19,12 +20,9 @@
               We put your money in high-quality assets that help you build wealth and achieve your financial goals.
             </p>
             <div class="download-buttons">
-              <!-- <a href="#" class="download-link" aria-label="Download on Apple Store"> -->
-                <img src="/apple.png" alt="Download on Apple Store" />
-              <!-- </a> -->
-              <!-- <a href="#" class="download-link" aria-label="Download on Android"> -->
-                <Android />
-              <!-- </a> -->
+              <img src="/apple.png" width="144" height="48" alt="Download on Apple Store" />
+              <img src="/android.png" width="144" height="48" alt="Download on Apple Store" />
+
             </div>
           </Animated>
         </div>
@@ -53,8 +51,6 @@ import Tech from '../icons/tech.vue';
 import Western from '../icons/western.vue';
 import Arm from '../icons/arm.vue';
 import Hero from '../icons/hero.vue';
-import Android from '../icons/android.vue';
-import Apple from '../icons/apple.vue';
 import NavBar from '../NavBar.vue';
 import Dot1 from '../icons/dot1.vue';
 import Dot2 from '../icons/dot2.vue';
@@ -81,28 +77,33 @@ import Dot5 from '../icons/dot5.vue';
 }
 
 .dot-1 {
-  top: 16%;
-  left: 14%;
+  top: 15%;
+  left: 2%;
 }
 
 .dot-2 {
-  bottom: 15%;
-  right: 6%;
+  bottom: 40%;
+  right: 3%;
 }
 
 .dot-3 {
-  bottom: 20%;
-  left: 15%;
+  top: 18%;
+  right: 7%;
 }
 
 .dot-4 {
-  top: 16%;
-  right: 35%;
+  top: 8%;
+  right: 13%;
 }
 
 .dot-5 {
-  top: 60%;
-  left: 50%;
+  top: 50%;
+  left: 15%;
+}
+
+.dot-6 {
+  bottom: 15%;
+  left: 12%;
 }
 
 .content {
@@ -121,6 +122,37 @@ import Dot5 from '../icons/dot5.vue';
     flex-direction: row;
     text-align: left;
   }
+    .dot {
+       opacity: 1;
+    }
+        .dot-1 {
+          top: 16%;
+          left: 14%;
+        }
+    
+        .dot-2 {
+          bottom: 15%;
+          right: 6%;
+        }
+    
+        .dot-3 {
+          top: 38%;
+          left: 37.5%;
+        }
+    
+        .dot-4 {
+          top: 16%;
+          right: 35%;
+        }
+    
+        .dot-5 {
+          top: 60%;
+          left: 50%;
+        }
+                .dot-6 {
+                  bottom: 15%;
+                  left: 20%;
+                }
 }
 
 .text-content {
@@ -165,6 +197,7 @@ import Dot5 from '../icons/dot5.vue';
     gap: 10px;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 
 .download-link {

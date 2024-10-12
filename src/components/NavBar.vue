@@ -2,7 +2,7 @@
     <header>
         <nav class="nav-bar">
             <router-link to="/" class="logo-link">
-                <img src="/logo.png" alt="Risevest Logo" class="logo" />
+                <img src="/logo.png" width="60" height="17.6925" alt="Risevest Logo" class="logo" />
             </router-link>
             <ul class="nav-links">
                 <li v-for="item in navLinks" :key="item.name" class="nav-item">
@@ -34,7 +34,7 @@
             leave-from-class="-translate-x-0 opacity-100" leave-to-class="translate-x-full opacity-0">
             <aside v-if="isSidebarOpen" class="sidebar">
                 <div class="sidebar-header">
-                    <img src="/logo.png" alt="Risevest Logo" class="logo" />
+                    <img src="/logo.png" width="60" height="17.6925" alt="Risevest Logo" class="logo" />
                     <button @click="toggleSidebar" class="close-button" aria-label="Close navigation menu">
                         <Close class="close-icon" />
                     </button>
@@ -236,7 +236,7 @@ const isActiveLink = (link: string) => {
 .close-button:focus,
 .nav-link:focus,
 .sidebar-link:focus {
-    outline: 2px solid #07969E;
+    /* outline: 2px solid #07969E; */
     outline-offset: 2px;
 }
 </style>

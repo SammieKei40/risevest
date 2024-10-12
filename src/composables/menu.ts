@@ -5,22 +5,22 @@ export const navLinks  = [
     },
     {
         name: 'Products',
-        link: '/products',
+        link: '#',
     },
     {
         name: 'Investment Club',
-        link: '/investment-club',
+        link: '#',
     },
     {
         name: 'Blog',
-        link: '/blog',
+        link: '#',
     },
     {
         name: 'About Us',
-        link: '/about-us',
+        link: '#',
     },
     {
         name: 'FAQs',
-        link: '/faqs',
+        link: '#',
     },
 ]

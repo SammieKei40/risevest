@@ -7,15 +7,20 @@ import { LoadingSpinner } from '@/components'
 
 const isLoading = ref<boolean>(true);
 
-onMounted(async () => {
-  try {
-    initSmoothScrolling(); 
-  } catch (error) {
-    console.error("Error initializing smooth scrolling:", error);
-  } finally {
+onMounted(() => {
+  setTimeout(() => {
     isLoading.value = false;
-  }
+  }, 3000); 
 });
+// onMounted(async () => {
+//   try {
+//     initSmoothScrolling(); 
+//   } catch (error) {
+//     console.error("Error initializing smooth scrolling:", error);
+//   } finally {
+//     isLoading.value = false;
+//   }
+// });
 </script>
 
 <template>

@@ -23,11 +23,11 @@
 }
 
 .spinner {
-  border: 8px solid #07969E;
+  border: 8px solid #71879C;
   border-top: 8px solid #07969E;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   animation: spin 1s linear infinite;
 }
 

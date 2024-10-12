@@ -3,7 +3,7 @@
         <div class="image-container"
             :class="{ 'left-margin': imagePosition === 'left', 'right-margin': imagePosition === 'right' }">
             <Animated class="col-span-6 ml-auto" type="fade-right">
-                <img :src="image" :alt="title" class="feature-image" />
+                <img  :src="image" :alt="title" class="feature-image" />
             </Animated>
         </div>
         <div class="text-content c-text">

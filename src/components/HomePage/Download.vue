@@ -1,145 +1,144 @@
 <template>
-    <section class="download-section w-contain">
-        <div class="content-container">
-            <div class="text-content">
-                <p class="sub-title">Download The Rise App</p>
-                <h2 class="main-title">Join our 100,000 users investing and setting long term goals!</h2>
-                <p class="description">Dollar investments that help you grow.</p>
-                <div class="download-buttons">
-                    <a href="#" class="download-button app-store">
-                        <Apple />
-                    </a>
-                    <a href="#" class="download-button google-play">
-                        <Android />
-                    </a>
-                </div>
+    <div class="rise-app w-contain c-trigger">
+        <div class="download-section c-text">
+            <p class="download-text">Download The Rise App</p>
+            <h1 class="headline">
+                Join our 100,000 users investing and setting long term goals!
+            </h1>
+            <p class="sub-text">Dollar investments that help you grow.</p>
+            <div class="app-buttons">
+                <a href="#" class="app-button">
+                    <img src="/apple.png" alt="Apple" />
+                </a>
+                <a href="#" class="app-button">
+                    <img src="/android.png" alt="Android" />
+                </a>
             </div>
+        </div>
+        <div class="phone-section">
             <Animated :delay="0.8">
                 <Hero />
             </Animated>
         </div>
-    </section>
+    </div>
 </template>
 
 <script setup lang="ts">
-import Hero from '../icons/hero.vue'
 import Animated from '../animated.vue'
-import Android from '../icons/android.vue'
-import Apple from '../icons/apple.vue'
-
+import Hero from '../icons/hero.vue'
 </script>
 
 <style scoped>
-/* Download Section Styling */
-.download-section {
-    background-color: #e7f8ff;
-    padding: 0.1rem;
-    border-radius: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-}
-
-.content-container {
+.rise-app {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
-}
-
-@media (min-width: 768px) {
-    .content-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10rem;
-    }
-}
-
-/* Text Content Styling */
-.text-content {
-    max-width: 500px;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #ECFEFE;
+    border-radius: 50px;
     text-align: center;
+    overflow: hidden;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+    height: 394px;
 }
 
-@media (min-width: 768px) {
-    .text-content {
-        text-align: left;
-    }
+.download-section {
+    max-width: 600px;
+    margin-bottom: 2rem;
+    z-index: 1;
 }
 
-.sub-title {
+.download-text {
     color: #07969E;
     font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
+    margin-bottom: 1rem;
 }
 
-.main-title {
-    font-size: 32px;
+.headline {
+    font-size: 20px;
         font-style: normal;
         font-weight: 600;
         line-height: 120%;
         letter-spacing: -1.6px;
-    color: #2d2d2d;
+    color: #2D2D2D;
     margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-    .main-title {
-        font-size: 2.5rem;
-    }
+.highlight {
+    color: #00a86b;
 }
 
-.description {
+.sub-text {
+    color: #4A5050;
     font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
-    color: #4a5050;
     margin-bottom: 2rem;
 }
 
-/* Download Buttons Styling */
-.download-buttons {
+.app-buttons {
     display: flex;
-    gap: 1rem;
+    /* gap: 50px; */
 }
 
-.download-button {
-    display: inline-block;
-    padding: 0.75rem 1rem;
-    background-color: #2d2d2d;
-    border-radius: 1rem;
-    transition: transform 0.2s;
+.app-button {
+    margin-right: 15px;
 }
 
-.download-button:hover {
-    transform: translateY(-5px);
-}
 
-.download-button img {
-    height: 2rem;
-    width: auto;
-}
-
-/* Phone Mockup Styling */
-.phone-mockup {
-    flex-shrink: 0;
-    max-width: 300px;
-}
-
-@media (min-width: 768px) {
-    .phone-mockup {
-        max-width: 400px;
-    }
+.phone-section {
+    position: absolute;
+    bottom: -320px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .phone-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .rise-app {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4rem;
+    }
+
+        .app-button {
+            margin-right: 20px;
+        }
+
+    .headline {
+        font-size: 32px;
+    }
+
+        .app-buttons {
+            display: flex;
+            flex-direction: row;
+                justify-content: space-between;
+            
+        }
+
+    .download-section {
+        text-align: left;
+        max-width: 500px;
+    }
+
+    .phone-section {
+        position: absolute;
+        bottom: -100px;
+        max-width: 400px;
+        right: -10px;
+    }
 }
 </style>

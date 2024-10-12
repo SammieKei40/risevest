@@ -47,19 +47,16 @@ const props = defineProps<Props>();
 @media (min-width: 768px) {
     .feature-section {
         flex-direction: row;
-        /* Side-by-side layout for larger screens */
     }
 }
 
 .feature-section.reverse {
     flex-direction: column;
-    /* Reverse order on mobile to make the image appear first */
 }
 
 @media (min-width: 768px) {
     .feature-section.reverse {
         flex-direction: row-reverse;
-        /* Reverse direction for larger screens */
     }
 }
 
@@ -68,14 +65,12 @@ const props = defineProps<Props>();
     flex-shrink: 0;
     margin-bottom: 1.5rem;
     order: -1;
-    /* Image appears before text content on mobile */
 }
 
 @media (min-width: 768px) {
     .image-container {
         margin-bottom: 0;
         order: 0;
-        /* Reset order for larger screens */
     }
 
     .image-container.right-margin {
@@ -105,7 +100,6 @@ const props = defineProps<Props>();
     text-align: center;
     max-width: 100%;
     order: 0;
-    /* Default order for text content on mobile */
 }
 
 @media (min-width: 768px) {

@@ -78,6 +78,22 @@ onMounted(() => {
     width: 100%;
 }
 
+a {
+  text-decoration: none; 
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+ol {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
 @media (min-width: 768px) {
     .footer__grid {
         display: flex;
@@ -99,10 +115,13 @@ onMounted(() => {
 }
 
 .footer__link {
-    color: var( #2D2D2D);
+    color: #2D2D2D;
     display: flex;
     align-items: center;
 }
+
+
+
 
 .footer__heading {
     margin-bottom: 24px;

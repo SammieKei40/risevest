@@ -19,10 +19,10 @@
             </p>
             <div class="download-buttons">
               <a href="#" class="download-link">
-                <Apple />
+                <img src="/apple.png" alt="Apple" />
               </a>
               <a href="#" class="download-link">
-                <Android />
+                <img src="/android.png" alt="Android" />
               </a>
             </div>
           </Animated>

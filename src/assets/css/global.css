@@ -14,21 +14,80 @@ body {
   font-family: 'Tomato Grotesk', sans-serif;
 }
 
-div.line>div.line {
+
+/* div.line > div.line {
   will-change: transform;
   transform: translateY(100%);
-  @apply md:py-1;
+  padding-top: 0; 
+  padding-bottom: 0;
+
+
+}
+@media (min-width: 768px) {
+  div.line > div.line {
+    padding-top: 0.25rem; 
+    padding-bottom: 0.25rem;
+  }
 }
 
 div.line {
   overflow-y: hidden;
   vertical-align: top;
 }
-.c-text:first-of-type{
-opacity: 0;
+
+
+.c-text:first-of-type {
+  opacity: 0;
+} */
+
+
+/* a.a_link {
+  text-decoration: underline; 
+} */
+
+.w-contain {
+  width: 90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-a.a_link{
-  @apply underline;
+
+@media (min-width: 768px) {
+  .w-contain {
+    width: 80%;
+  }
 }
+
+@media (min-width: 1536px) {
+  .w-contain {
+    max-width: 1400px;
+  }
+}
+
+    .text-green-grad {
+      background: radial-gradient(
+        142.18% 126.37% at 4.28% 96.6%,
+        #282c8e 0%,
+        #1f7a4e 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-bg {
+      background-image: url('../..');
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+    .hero-bg-fixed {
+      background-image: url('../../assets/images/hero-bg-image.png');
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+ 
+
 
 

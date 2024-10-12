@@ -1,5 +1,5 @@
 <template>
-    <section class="empower-section">
+    <section class="empower-section w-contain">
         <div class="content-container">
             <h2 class="main-title">
                 From The People Who Use Rise
@@ -12,8 +12,9 @@
             </Animated>
         </div>
         <div class="testimonial-carousel">
-            <carousel :autoplay="0" :per-page="1" :loop="true" class="testimonial-wrapper">
-                <slide v-for="testimonial in testimonials" :key="testimonial.id">
+            <Carousel :autoplay="2000" :per-page="1" :loop="true" :itemsToShow="1" :wrapAround="true" :transition="2000"
+                class="testimonial-wrapper">
+                <Slide v-for="testimonial in testimonials" :key="testimonial.id">
                     <div class="testimonial-card">
                         <p class="testimonial-text">{{ testimonial.text }}</p>
                         <div class="testimonial-author">
@@ -21,8 +22,8 @@
                             <span class="author-name">{{ testimonial.name }}</span>
                         </div>
                     </div>
-                </slide>
-            </carousel>
+                </Slide>
+            </Carousel>
         </div>
     </section>
 </template>
@@ -34,9 +35,9 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 const testimonials = ref([
-    { id: 1, text: "I don't want to invest in separate stocks because I'm not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.", name: 'Lade', avatar: '/avatar1.png' },
-    { id: 2, text: "I don't want to invest in separate stocks because I'm not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.", name: 'Jesse', avatar: '/avatar2.png' },
-    { id: 3, text: "I chose Rise because of its leadership, wealth of knowledge and the people who support them. I invest with Rise in order to protect my savings and investment from being depleted by devaluation and inflation that's at an all-time high in Nigeria.", name: 'Raye', avatar: '/avatar3.png' },
+    { id: 1, text: "I don't want to invest in separate stocks because I'm not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.", name: 'Lade', avatar: '/man1.png' },
+    { id: 2, text: "I don't want to invest in separate stocks because I'm not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.", name: 'Jesse', avatar: '/girl1.png' },
+    { id: 3, text: "I chose Rise because of its leadership, wealth of knowledge and the people who support them. I invest with Rise in order to protect my savings and investment from being depleted by devaluation and inflation that's at an all-time high in Nigeria.", name: 'Raye', avatar: '/man1.png' },
 ]);
 </script>
 
@@ -106,11 +107,10 @@ const testimonials = ref([
     background-color: #ffffff;
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: start;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -120,6 +120,7 @@ const testimonials = ref([
     color: #4A5050;
     line-height: 1.5;
     margin-bottom: 1.5rem;
+    text-align: start;
 }
 
 .testimonial-author {
@@ -139,5 +140,45 @@ const testimonials = ref([
     font-size: 1rem;
     font-weight: 600;
     color: #2d2d2d;
+}
+
+.carousel__slide {
+    padding: 5px;
+}
+
+.carousel__viewport {
+    perspective: 2000px;
+}
+
+.carousel__track {
+    transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+    transition: 0.5s;
+}
+
+.carousel__slide {
+    opacity: 0.9;
+    transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active~.carousel__slide {
+    transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+    opacity: 1;
+    transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--next {
+    opacity: 1;
+    transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+    opacity: 1;
+    transform: rotateY(0) scale(1.1);
 }
 </style>

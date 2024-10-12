@@ -34,6 +34,7 @@ import AssetCard from './../UI/AssetsCard.vue';
     padding: 2rem 1rem;
 }
 
+
 @media (min-width: 768px) {
     .asset-section {
         padding: 2.5rem 2rem;

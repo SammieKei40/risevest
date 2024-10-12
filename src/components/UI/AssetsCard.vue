@@ -55,6 +55,22 @@ const props = defineProps<Props>();
     margin: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .asset-card:hover {
     transform: translateY(-5px);
 }

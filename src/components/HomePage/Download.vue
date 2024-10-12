@@ -42,12 +42,12 @@ import Hero from '../icons/hero.vue'
     overflow: hidden;
     margin-bottom: 6rem;
     margin-top: 4rem;
-    height: 394px;
+    height: 450px;
 }
 
 .download-section {
     max-width: 600px;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
     z-index: 1;
 }
 
@@ -95,7 +95,7 @@ import Hero from '../icons/hero.vue'
 
 .phone-section {
     position: absolute;
-    bottom: -320px;
+    bottom: -330px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -132,6 +132,7 @@ import Hero from '../icons/hero.vue'
     .download-section {
         text-align: left;
         max-width: 500px;
+    margin-bottom: -2rem;
     }
 
     .phone-section {

@@ -12,7 +12,7 @@
             </Animated>
         </div>
         <div class="testimonial-carousel">
-            <Carousel :autoplay="2000" :per-page="1" :loop="true" :itemsToShow="1" :wrapAround="true" :transition="2000"
+            <Carousel :autoplay="4000" :per-page="1" :loop="true" :itemsToShow="1" :wrapAround="true" :transition="2000"
                 class="testimonial-wrapper">
                 <Slide v-for="testimonial in testimonials" :key="testimonial.id">
                     <div class="testimonial-card">

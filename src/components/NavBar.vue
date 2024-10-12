@@ -114,6 +114,7 @@ const isActiveLink = (link: string) => {
     .nav-links {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
 
@@ -138,6 +139,7 @@ const isActiveLink = (link: string) => {
 
 .nav-arrow {
     margin-left: 4px;
+    margin-top: 5px;
     font-size: 0.8rem;
 }
 

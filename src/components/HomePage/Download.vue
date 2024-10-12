@@ -26,6 +26,13 @@
 <script setup lang="ts">
 import Animated from '../animated.vue'
 import Hero from '../icons/hero.vue'
+import { useAnimation } from '@/composables/animations/useAnimations';
+import { onMounted } from 'vue';
+const { animateLineText } = useAnimation()
+
+onMounted(async () => {
+    animateLineText(".c-text", ".c-trigger")
+})
 </script>
 
 <style scoped>

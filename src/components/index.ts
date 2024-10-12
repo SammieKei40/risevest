@@ -7,5 +7,6 @@ import Community from './HomePage/Community.vue'
 import Download from './HomePage/Download.vue'
 import Testimonial from './HomePage/Testimonial.vue'
 import FooterSection from './FooterSection.vue'
+import LoadingSpinner from './UI/LoadingSpinner.vue'
 
-export { Hero, Features, Assets, SaveUp, Regulated, Community, FooterSection, Download, Testimonial }
+export { Hero, Features, Assets, SaveUp, Regulated, Community, FooterSection, Download, Testimonial, LoadingSpinner }

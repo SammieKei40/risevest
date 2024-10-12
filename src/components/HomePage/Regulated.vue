@@ -1,10 +1,10 @@
 <template>
     <section class="empower-section">
         <div class="content-container">
+            <Animated :delay="0.4">
             <h2 class="main-title">
                 How we are Regulated
             </h2>
-            <Animated :delay="0.4">
                 <p class="description">
                     Rise is registered and regulated both in the US and in Nigeria. Our team is made up of US registered
                     investment advisers, our Nigerian users are covered by our SEC licensed trustees, ARM Trustees and

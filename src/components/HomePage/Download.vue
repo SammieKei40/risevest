@@ -89,7 +89,7 @@ import Hero from '../icons/hero.vue'
 }
 
 .app-button {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 
@@ -115,7 +115,7 @@ import Hero from '../icons/hero.vue'
     }
 
         .app-button {
-            margin-right: 20px;
+            margin-right: 15px;
         }
 
     .headline {

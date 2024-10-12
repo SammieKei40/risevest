@@ -1,20 +1,20 @@
 <template>
-    <div class="feature-section c-trigger" :class="{ 'reverse': imagePosition === 'left' }">
+    <section class="feature-section c-trigger" :class="{ 'reverse': imagePosition === 'left' }">
         <div class="image-container"
             :class="{ 'left-margin': imagePosition === 'left', 'right-margin': imagePosition === 'right' }">
-            <Animated class="col-span-6  ml-auto" type="fade-right">
+            <Animated class="col-span-6 ml-auto" type="fade-right">
                 <img :src="image" :alt="title" class="feature-image" />
             </Animated>
         </div>
         <div class="text-content c-text">
-            <h3 class="feature-title">{{ title }}</h3>
+            <h2 class="feature-title">{{ title }}</h2>
             <p class="feature-description">{{ description }}</p>
             <a href="#" class="cta-link" aria-label="Start investing now">
                 Start Investing Now
                 <Arrow />
             </a>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup lang="ts">

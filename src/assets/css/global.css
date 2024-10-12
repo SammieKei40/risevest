@@ -15,7 +15,7 @@ body {
 }
 
 
-/* div.line > div.line {
+div.line > div.line {
   will-change: transform;
   transform: translateY(100%);
   padding-top: 0; 
@@ -41,9 +41,9 @@ div.line {
 } */
 
 
-/* a.a_link {
+a.a_link {
   text-decoration: underline; 
-} */
+}
 
 .w-contain {
   width: 90%;
@@ -88,6 +88,5 @@ div.line {
       background-attachment: fixed;
     }
  
-
 
 

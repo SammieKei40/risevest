@@ -1,8 +1,9 @@
 <template>
-  <div class="hero relative">
+  <section class="hero relative">
     <div class="w-contain mx-auto">
-      <NavBar />
-
+      <header>
+        <NavBar />
+      </header>
 
       <Dot1 class="dot dot-1" />
       <Dot5 class="dot dot-5" />
@@ -12,18 +13,18 @@
 
       <div class="content">
         <div class="text-content c-trigger">
-          <h2 class="title c-text">Dollar investments that help you grow</h2>
+          <h1 class="title c-text">Dollar investments that help you grow</h1>
           <Animated :delay="0.4">
             <p class="description">
               We put your money in high-quality assets that help you build wealth and achieve your financial goals.
             </p>
             <div class="download-buttons">
-              <a href="#" class="download-link">
-                <img src="/apple.png" alt="Apple" />
-              </a>
-              <a href="#" class="download-link">
-                <img src="/android.png" alt="Android" />
-              </a>
+              <!-- <a href="#" class="download-link" aria-label="Download on Apple Store"> -->
+                <img src="/apple.png" alt="Download on Apple Store" />
+              <!-- </a> -->
+              <!-- <a href="#" class="download-link" aria-label="Download on Android"> -->
+                <Android />
+              <!-- </a> -->
             </div>
           </Animated>
         </div>
@@ -34,19 +35,19 @@
         </div>
       </div>
 
-      <h1 class="support-text">We are supported by</h1>
-      <div class="partners">
+      <h2 class="support-text">We are supported by</h2>
+      <section class="partners" aria-label="Our Partners">
         <Arm />
         <Western />
         <Tech />
         <Vem />
-      </div>
+      </section>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
-import Animated from '../animated.vue'
+import Animated from '../animated.vue';
 import Vem from '../icons/vem.vue';
 import Tech from '../icons/tech.vue';
 import Western from '../icons/western.vue';
@@ -81,7 +82,7 @@ import Dot5 from '../icons/dot5.vue';
 
 .dot-1 {
   top: 16%;
-  left: 14%;;
+  left: 14%;
 }
 
 .dot-2 {
@@ -158,7 +159,12 @@ import Dot5 from '../icons/dot5.vue';
 
 .download-buttons {
   display: flex;
+  flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .download-link {
@@ -190,7 +196,12 @@ import Dot5 from '../icons/dot5.vue';
   .support-text {
     display: none;
   }
+    .download-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
   
+    }
 }
 
 .partners {
@@ -204,6 +215,7 @@ import Dot5 from '../icons/dot5.vue';
     margin-top: 4rem;
   }
 }
+
 .content,
 .text-content,
 .image-content,

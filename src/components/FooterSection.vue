@@ -4,7 +4,7 @@
 
         <div class="footer__grid">
             <div>
-                <img src="/logo.png" class="footer__logo" alt="" />
+                <img src="/rise-black.png" class="footer__logo" alt="Rise Black" />
                 <ul class="footer__list">
                     <li v-for="link in companyLinks" :key="link.name" class="footer__item">
                         <a :href="link.link" class="footer__link">

@@ -75,7 +75,6 @@ onMounted(async () => {
   height: 100%;
   background-color: #fff;
   width: 100%;
-  background-image: url('/path/to/your/image.jpg');
   background-size: cover;
   background-position: center;
   position: relative;

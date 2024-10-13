@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from '../views/Index.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -7,7 +6,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: Index
+      component: () => import('../views/Index.vue'),
     }
     // {
     //   path: '/about',

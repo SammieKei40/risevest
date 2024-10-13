@@ -7,10 +7,12 @@
             </h1>
             <p class="sub-text">Dollar investments that help you grow.</p>
             <div class="app-buttons">
-                <a href="#" class="app-button">
+                <a href="https://apps.apple.com/ng/app/risevest-invest-in-dollars/id1486295645" target="_blank"
+                    class="app-button">
                     <img src="/apple.png" alt="Apple" width="144" height="48" />
                 </a>
-                <a href="#" class="app-button">
+                    <a href="https://play.google.com/store/apps/details?id=com.rise.mobile" target="_blank"
+                        class="app-button">
                     <img src="/android.png" alt="Android" width="144" height="48" />
                 </a>
             </div>

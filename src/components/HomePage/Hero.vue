@@ -20,8 +20,13 @@
               We put your money in high-quality assets that help you build wealth and achieve your financial goals.
             </p>
             <div class="download-buttons">
-              <img src="/apple.png" width="144" height="48" alt="Download on Apple Store" />
-              <img src="/android.png" width="144" height="48" alt="Download on Apple Store" />
+              <a href="https://apps.apple.com/ng/app/risevest-invest-in-dollars/id1486295645" target="_blank">
+                <img src="/apple.png" width="144" height="48" alt="Download on Apple Store" />
+
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.rise.mobile" target="_blank">
+                <img src="/android.png" width="144" height="48" alt="Download on Apple Store" />
+              </a>
 
             </div>
           </Animated>

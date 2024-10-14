@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // import { ref, onMounted } from 'vue';
 import { RouterView } from 'vue-router';
-// import { LoadingSpinner, ScrollUp } from '@/components'
+import {  ScrollUp } from './components'
 
 
 // const isLoading = ref<boolean>(true);
@@ -18,15 +18,11 @@ import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <div>
     <!-- <LoadingSpinner v-if="isLoading" /> -->
-    <div>
-      <keep-alive>
-        <RouterView />
-      </keep-alive>
-        <ScrollUp />
-    </div>
-  </div>
+    <!-- <div> -->
+      <RouterView />
+      <ScrollUp />
+    <!-- </div> -->
 </template>
 
 <style scoped lang="scss">

@@ -19,7 +19,7 @@
 <script setup lang="ts">
 import Animated from '../animated.vue'
 import { defineProps, onMounted } from 'vue';
-import { useAnimation } from '@/composables/animations/useAnimations';
+import { useAnimation } from '../../composables/animations/useAnimations';
 const { animateLineText } = useAnimation()
 
 onMounted(async () => {

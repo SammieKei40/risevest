@@ -61,7 +61,7 @@ import Dot1 from '../icons/dot1.vue';
 import Dot2 from '../icons/dot2.vue';
 import Dot3 from '../icons/dot3.vue';
 import Dot5 from '../icons/dot5.vue';
-import { useAnimation } from '@/composables/animations/useAnimations';
+import { useAnimation } from '../../composables/animations/useAnimations';
 import { onMounted } from 'vue';
 const { animateLineText } = useAnimation()
 

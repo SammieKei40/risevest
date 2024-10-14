@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Hero, Features, Assets, SaveUp, Regulated, Community, FooterSection, Download, Testimonial } from '@/components'
+import { Hero, Features, Assets, SaveUp, Regulated, Community, FooterSection, Download, Testimonial } from '../components'
 </script>
 
 <template>

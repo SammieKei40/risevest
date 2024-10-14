@@ -55,7 +55,7 @@
 import Arrowup from './icons/arrowup.vue'
 import { onMounted } from 'vue';
 import { companyLinks, exploreLinks, applyLinks, followLinks } from '../composables/footer';
-import { useAnimation } from '@/composables/animations/useAnimations';
+import { useAnimation } from '../composables/animations/useAnimations';
 const { animateLineText } = useAnimation();
 
 onMounted(() => {

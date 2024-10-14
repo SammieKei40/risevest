@@ -57,7 +57,7 @@
 import Dot from './icons/dot.vue'
 import Arrowdown from './icons/arrowdown.vue'
 import Close from './icons/close.vue';
-import { navLinks } from '@/composables/menu';
+import { navLinks } from '../composables/menu';
 import { ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 

@@ -21,7 +21,7 @@
 import Animated from '../animated.vue'
 import Arrow from '../icons/arrow.vue';
 import { defineProps, onMounted } from 'vue';
-import { useAnimation } from '@/composables/animations/useAnimations';
+import { useAnimation } from '../../composables/animations/useAnimations';
 const { animateLineText } = useAnimation()
 interface Props {
     title: string;
